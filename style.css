@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 0;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding-inline: 23px;
+}
+.container2{
+        max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding-inline: 23px;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;  
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+
+    
+    
+}
+.button{
+    display: inline-flex;
+    border-radius: 30px;
+    padding: 0 4ch;
+    font-size: 20px;
+    line-height: 3em;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 0.5rem 0.5rem #a73d3d;
+    
+    
+} 
+header{
+    z-index: 3;
+    position: fixed;
+    inset: 0;
+    bottom: auto    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    gap: 17px;
+}
+main{
+    flex-grow: 1;
+    
+}
+section{
+    padding-block: 4rem;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 30px;
+
+
+}
+.hero {
+    position: relative;
+    background-image: linear-gradient(to left, #E06161, #FFC997);
+
+}
+.hero .content{
+    min-height: 70vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 1;
+    position: relative;
+}
+.hero h1{
+    font-size: 100px;
+    text-shadow: 7px 7px #ca5858 ;
+    text-align: center;
+    color: white    ;
+
+}   
+.hero .button{
+    align-self: center;
+}
+.hero .decoration{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    
+}
+.decoration .triangle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: triangle;
+    animation-duration: 7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+.decoration .octagon{
+    animation: Octagon 3s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s infinite normal forwards;
+    position: absolute;
+    top: 300px;
+    right: 300px;
+    color: white;
+
+}
+
+.What-are-we-doing{
+    padding-block: 40px;
+}
+.What-are-we-doing h3{
+    text-align: center;
+    margin-bottom: 1em;
+}
+    .about-us{
+        background-image: linear-gradient(to left top  ,transparent 0%,transparent 50%,#be5353 50%,
+    #E06161 100%);
+    
+}
+.about-us h2{
+    text-align: center;
+    margin-bottom: 1em;
+    color: white;
+
+
+
+}
+.about-us .block{
+    display: flex;
+    gap: 35px;
+}
+.about-us .card{
+    border:5px solid #FFC997;
+    border-radius:3rem ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+.about-us .card h3{
+    text-align: center;
+    
+}
+.about-us .card hr{
+    width: 150px;
+    margin: 0 auto;
+    border-width: 2px;
+    border-color: #dc6969;
+    border-style: solid;
+}
+.about-us .card img{
+    margin: 0 auto;
+}
+.advantages{                                                
+    overflow-x: clip;
+}
+.advantages .card{                                                
+    border: 3px solid #FFC997;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0.5rem 0.5rem #a73d3d;
+    background-color: white;
+    max-width: 500px;
+    width: 100%;
+}
+.advantages .card:nth-child(2){
+    align-self: flex-end ;
+}
+.advantages .container{
+    display: flex;
+    position: relative;
+    z-index: 0;
+    gap: 1rem;
+
+}
+.advantages .decor{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: calc(100% - 300px);
+    left: calc(100% - 300px );
+    z-index: -1;
+}
+.advantages .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.advantages .content{
+    flex-grow: 1;
+}
+
+@keyframes triangle {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 100%;
+        left: 100%;
+    }
+}
+@keyframes Octagon {
+	0% {
+		transform: rotate(0);
+		transform-origin: bottom;
+	}
+
+	100% {
+		transform: rotate(360deg);
+		transform-origin: bottom;
+	}
+}
+.buisness .container{
+    display: flex;
+    
+}
+.buisness h2{
+    text-align: center;
+    margin-bottom: 1em;
+    
+}
+.buisness p{
+    background-color: white ;   
+    padding: 2rem;
+    border-radius: 3rem;
+    border: 1px solid #ffc997 ;
+    box-shadow: 0.5rem 0.5rem #a73d3d;
+}
+section.buisness{
+    background-image: linear-gradient(185deg  ,transparent 0%,transparent 30%, #FFC997  30%, #E06161 100%);
+    padding-block: 4rem;
+
+}
+
+.our-works .cards-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.our-works .card{
+    flex-basis: calc(50% - 1px);
+    flex-shrink: 1;
+    border-radius: 2rem;
+    border: 2px solid #a73d3d;
+    overflow: clip;
+    
+}
+.our-works .card img{
+    width: 100%;
+    height: 300px;
+}
+footer{
+    background-color: #FFC997;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 50px;
+    gap: 20px;
+}
